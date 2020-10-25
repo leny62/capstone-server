@@ -4,10 +4,10 @@ mongoose.set('useUnifiedTopology', true);
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const usersRouter = require('./routes/users');
+const usersRouter = require('./src/routes/users');
 const app = express();
 
-mongoose.connect('mongodb://localhost/capstone',{
+mongoose.connect("mongodb://localhost:27017/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(()=>{
